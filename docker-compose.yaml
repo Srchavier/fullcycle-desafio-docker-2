@@ -38,7 +38,7 @@ services:
       - node_nginx
     depends_on:
       - node
-    entrypoint: dockerize -wait tcp://node:3000 -timeout 10s nginx -g "daemon off;"
+    entrypoint: dockerize -wait tcp://node:3000 -timeout 20s nginx -g "daemon off;"
     
 
 networks:
