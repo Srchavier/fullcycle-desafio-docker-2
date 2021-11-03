@@ -23,7 +23,7 @@ connection.connect((err) => {
 
 connection.query(insert);
 
-app.get("/test", async (req, res) => {
+app.get("/", async (req, res) => {
   const sql = "select * from people";
   await connection.query(sql, (error, results) => {
     if (error) throw error;
